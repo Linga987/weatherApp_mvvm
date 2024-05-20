@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1E7EE972BED2E0F00C11584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EE962BED2E0F00C11584 /* AppDelegate.swift */; };
+		B1E7EE992BED2E0F00C11584 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EE982BED2E0F00C11584 /* SceneDelegate.swift */; };
+		B1E7EE9E2BED2E1000C11584 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B1E7EE9D2BED2E1000C11584 /* Base */; };
+		B1E7EEA02BED2E1100C11584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E7EE9F2BED2E1100C11584 /* Assets.xcassets */; };
+		B1E7EEA32BED2E1100C11584 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B1E7EEA22BED2E1100C11584 /* Base */; };
+		B1E7EEAE2BED2E1100C11584 /* wheatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EEAD2BED2E1100C11584 /* wheatherAppTests.swift */; };
+		B1E7EEB82BED2E1100C11584 /* wheatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EEB72BED2E1100C11584 /* wheatherAppUITests.swift */; };
+		B1E7EEBA2BED2E1200C11584 /* wheatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EEB92BED2E1200C11584 /* wheatherAppUITestsLaunchTests.swift */; };
+		B1E7EEC82BED2F6700C11584 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EEC72BED2F6700C11584 /* WeatherResponse.swift */; };
+		B1E7EECB2BED301100C11584 /* ApiCalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EECA2BED301100C11584 /* ApiCalling.swift */; };
+		B1E7EECE2BED3A4200C11584 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EECD2BED3A4200C11584 /* WeatherViewModel.swift */; };
+		B1E7EED12BED432F00C11584 /* CitiyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EED02BED432F00C11584 /* CitiyListTableViewController.swift */; };
+		B1E7EED42BED4A9C00C11584 /* CitiyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E7EED32BED4A9C00C11584 /* CitiyCell.swift */; };
+		B1F212392BF6750600598B8B /* WeatherDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F212382BF6750600598B8B /* WeatherDetailViewModel.swift */; };
+		B1F2123D2BF67E5C00598B8B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1F2123C2BF67E5C00598B8B /* DetailViewController.xib */; };
+		B1F2123E2BF67E5C00598B8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2123B2BF67E5C00598B8B /* DetailViewController.swift */; };
+		B1F212402BF688BB00598B8B /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2123F2BF688BB00598B8B /* CityViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1E7EEAA2BED2E1100C11584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E7EE8B2BED2E0F00C11584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1E7EE922BED2E0F00C11584;
+			remoteInfo = wheatherApp;
+		};
+		B1E7EEB42BED2E1100C11584 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E7EE8B2BED2E0F00C11584 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1E7EE922BED2E0F00C11584;
+			remoteInfo = wheatherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1E7EE932BED2E0F00C11584 /* wheatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wheatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E7EE962BED2E0F00C11584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1E7EE982BED2E0F00C11584 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1E7EE9D2BED2E1000C11584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1E7EE9F2BED2E1100C11584 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1E7EEA22BED2E1100C11584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1E7EEA42BED2E1100C11584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E7EEA92BED2E1100C11584 /* wheatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wheatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E7EEAD2BED2E1100C11584 /* wheatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherAppTests.swift; sourceTree = "<group>"; };
+		B1E7EEB32BED2E1100C11584 /* wheatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wheatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E7EEB72BED2E1100C11584 /* wheatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherAppUITests.swift; sourceTree = "<group>"; };
+		B1E7EEB92BED2E1200C11584 /* wheatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1E7EEC72BED2F6700C11584 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		B1E7EECA2BED301100C11584 /* ApiCalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCalling.swift; sourceTree = "<group>"; };
+		B1E7EECD2BED3A4200C11584 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		B1E7EED02BED432F00C11584 /* CitiyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiyListTableViewController.swift; sourceTree = "<group>"; };
+		B1E7EED32BED4A9C00C11584 /* CitiyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiyCell.swift; sourceTree = "<group>"; };
+		B1F212382BF6750600598B8B /* WeatherDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewModel.swift; sourceTree = "<group>"; };
+		B1F2123B2BF67E5C00598B8B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B1F2123C2BF67E5C00598B8B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		B1F2123F2BF688BB00598B8B /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1E7EE902BED2E0F00C11584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E7EEA62BED2E1100C11584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E7EEB02BED2E1100C11584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1E7EE8A2BED2E0F00C11584 = {
+			isa = PBXGroup;
+			children = (
+				B1E7EE952BED2E0F00C11584 /* wheatherApp */,
+				B1E7EEAC2BED2E1100C11584 /* wheatherAppTests */,
+				B1E7EEB62BED2E1100C11584 /* wheatherAppUITests */,
+				B1E7EE942BED2E0F00C11584 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1E7EE942BED2E0F00C11584 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1E7EE932BED2E0F00C11584 /* wheatherApp.app */,
+				B1E7EEA92BED2E1100C11584 /* wheatherAppTests.xctest */,
+				B1E7EEB32BED2E1100C11584 /* wheatherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1E7EE952BED2E0F00C11584 /* wheatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				B1F2123A2BF67E3B00598B8B /* View */,
+				B1E7EED22BED4A7000C11584 /* Custom Cells */,
+				B1E7EECF2BED42B300C11584 /* Controllers */,
+				B1E7EECC2BED3A2100C11584 /* ViewModels */,
+				B1E7EEC92BED2FFE00C11584 /* Services */,
+				B1E7EEC62BED2F4900C11584 /* Model */,
+				B1E7EE962BED2E0F00C11584 /* AppDelegate.swift */,
+				B1E7EE982BED2E0F00C11584 /* SceneDelegate.swift */,
+				B1E7EE9C2BED2E1000C11584 /* Main.storyboard */,
+				B1E7EE9F2BED2E1100C11584 /* Assets.xcassets */,
+				B1E7EEA12BED2E1100C11584 /* LaunchScreen.storyboard */,
+				B1E7EEA42BED2E1100C11584 /* Info.plist */,
+			);
+			path = wheatherApp;
+			sourceTree = "<group>";
+		};
+		B1E7EEAC2BED2E1100C11584 /* wheatherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1E7EEAD2BED2E1100C11584 /* wheatherAppTests.swift */,
+			);
+			path = wheatherAppTests;
+			sourceTree = "<group>";
+		};
+		B1E7EEB62BED2E1100C11584 /* wheatherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1E7EEB72BED2E1100C11584 /* wheatherAppUITests.swift */,
+				B1E7EEB92BED2E1200C11584 /* wheatherAppUITestsLaunchTests.swift */,
+			);
+			path = wheatherAppUITests;
+			sourceTree = "<group>";
+		};
+		B1E7EEC62BED2F4900C11584 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1E7EEC72BED2F6700C11584 /* WeatherResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1E7EEC92BED2FFE00C11584 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B1E7EECA2BED301100C11584 /* ApiCalling.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B1E7EECC2BED3A2100C11584 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1E7EECD2BED3A4200C11584 /* WeatherViewModel.swift */,
+				B1F212382BF6750600598B8B /* WeatherDetailViewModel.swift */,
+				B1F2123F2BF688BB00598B8B /* CityViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B1E7EECF2BED42B300C11584 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1E7EED02BED432F00C11584 /* CitiyListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B1E7EED22BED4A7000C11584 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B1E7EED32BED4A9C00C11584 /* CitiyCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		B1F2123A2BF67E3B00598B8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1F2123B2BF67E5C00598B8B /* DetailViewController.swift */,
+				B1F2123C2BF67E5C00598B8B /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1E7EE922BED2E0F00C11584 /* wheatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E7EEBD2BED2E1200C11584 /* Build configuration list for PBXNativeTarget "wheatherApp" */;
+			buildPhases = (
+				B1E7EE8F2BED2E0F00C11584 /* Sources */,
+				B1E7EE902BED2E0F00C11584 /* Frameworks */,
+				B1E7EE912BED2E0F00C11584 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wheatherApp;
+			productName = wheatherApp;
+			productReference = B1E7EE932BED2E0F00C11584 /* wheatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1E7EEA82BED2E1100C11584 /* wheatherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E7EEC02BED2E1200C11584 /* Build configuration list for PBXNativeTarget "wheatherAppTests" */;
+			buildPhases = (
+				B1E7EEA52BED2E1100C11584 /* Sources */,
+				B1E7EEA62BED2E1100C11584 /* Frameworks */,
+				B1E7EEA72BED2E1100C11584 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1E7EEAB2BED2E1100C11584 /* PBXTargetDependency */,
+			);
+			name = wheatherAppTests;
+			productName = wheatherAppTests;
+			productReference = B1E7EEA92BED2E1100C11584 /* wheatherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1E7EEB22BED2E1100C11584 /* wheatherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E7EEC32BED2E1200C11584 /* Build configuration list for PBXNativeTarget "wheatherAppUITests" */;
+			buildPhases = (
+				B1E7EEAF2BED2E1100C11584 /* Sources */,
+				B1E7EEB02BED2E1100C11584 /* Frameworks */,
+				B1E7EEB12BED2E1100C11584 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1E7EEB52BED2E1100C11584 /* PBXTargetDependency */,
+			);
+			name = wheatherAppUITests;
+			productName = wheatherAppUITests;
+			productReference = B1E7EEB32BED2E1100C11584 /* wheatherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1E7EE8B2BED2E0F00C11584 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B1E7EE922BED2E0F00C11584 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B1E7EEA82BED2E1100C11584 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B1E7EE922BED2E0F00C11584;
+					};
+					B1E7EEB22BED2E1100C11584 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B1E7EE922BED2E0F00C11584;
+					};
+				};
+			};
+			buildConfigurationList = B1E7EE8E2BED2E0F00C11584 /* Build configuration list for PBXProject "wheatherApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1E7EE8A2BED2E0F00C11584;
+			productRefGroup = B1E7EE942BED2E0F00C11584 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1E7EE922BED2E0F00C11584 /* wheatherApp */,
+				B1E7EEA82BED2E1100C11584 /* wheatherAppTests */,
+				B1E7EEB22BED2E1100C11584 /* wheatherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1E7EE912BED2E0F00C11584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E7EEA02BED2E1100C11584 /* Assets.xcassets in Resources */,
+				B1E7EEA32BED2E1100C11584 /* Base in Resources */,
+				B1E7EE9E2BED2E1000C11584 /* Base in Resources */,
+				B1F2123D2BF67E5C00598B8B /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E7EEA72BED2E1100C11584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E7EEB12BED2E1100C11584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1E7EE8F2BED2E0F00C11584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E7EED12BED432F00C11584 /* CitiyListTableViewController.swift in Sources */,
+				B1F212402BF688BB00598B8B /* CityViewModel.swift in Sources */,
+				B1E7EEC82BED2F6700C11584 /* WeatherResponse.swift in Sources */,
+				B1E7EECE2BED3A4200C11584 /* WeatherViewModel.swift in Sources */,
+				B1E7EE972BED2E0F00C11584 /* AppDelegate.swift in Sources */,
+				B1E7EED42BED4A9C00C11584 /* CitiyCell.swift in Sources */,
+				B1E7EECB2BED301100C11584 /* ApiCalling.swift in Sources */,
+				B1F2123E2BF67E5C00598B8B /* DetailViewController.swift in Sources */,
+				B1E7EE992BED2E0F00C11584 /* SceneDelegate.swift in Sources */,
+				B1F212392BF6750600598B8B /* WeatherDetailViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E7EEA52BED2E1100C11584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E7EEAE2BED2E1100C11584 /* wheatherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E7EEAF2BED2E1100C11584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E7EEBA2BED2E1200C11584 /* wheatherAppUITestsLaunchTests.swift in Sources */,
+				B1E7EEB82BED2E1100C11584 /* wheatherAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1E7EEAB2BED2E1100C11584 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1E7EE922BED2E0F00C11584 /* wheatherApp */;
+			targetProxy = B1E7EEAA2BED2E1100C11584 /* PBXContainerItemProxy */;
+		};
+		B1E7EEB52BED2E1100C11584 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1E7EE922BED2E0F00C11584 /* wheatherApp */;
+			targetProxy = B1E7EEB42BED2E1100C11584 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1E7EE9C2BED2E1000C11584 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E7EE9D2BED2E1000C11584 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1E7EEA12BED2E1100C11584 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E7EEA22BED2E1100C11584 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1E7EEBB2BED2E1200C11584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1E7EEBC2BED2E1200C11584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1E7EEBE2BED2E1200C11584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wheatherApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swfitUTutorial.wheatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1E7EEBF2BED2E1200C11584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wheatherApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swfitUTutorial.wheatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1E7EEC12BED2E1200C11584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swfitUTutorial.wheatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wheatherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wheatherApp";
+			};
+			name = Debug;
+		};
+		B1E7EEC22BED2E1200C11584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swfitUTutorial.wheatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wheatherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wheatherApp";
+			};
+			name = Release;
+		};
+		B1E7EEC42BED2E1200C11584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swfitUTutorial.wheatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wheatherApp;
+			};
+			name = Debug;
+		};
+		B1E7EEC52BED2E1200C11584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swfitUTutorial.wheatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wheatherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1E7EE8E2BED2E0F00C11584 /* Build configuration list for PBXProject "wheatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E7EEBB2BED2E1200C11584 /* Debug */,
+				B1E7EEBC2BED2E1200C11584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E7EEBD2BED2E1200C11584 /* Build configuration list for PBXNativeTarget "wheatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E7EEBE2BED2E1200C11584 /* Debug */,
+				B1E7EEBF2BED2E1200C11584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E7EEC02BED2E1200C11584 /* Build configuration list for PBXNativeTarget "wheatherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E7EEC12BED2E1200C11584 /* Debug */,
+				B1E7EEC22BED2E1200C11584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1E7EEC32BED2E1200C11584 /* Build configuration list for PBXNativeTarget "wheatherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E7EEC42BED2E1200C11584 /* Debug */,
+				B1E7EEC52BED2E1200C11584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1E7EE8B2BED2E0F00C11584 /* Project object */;
+}
