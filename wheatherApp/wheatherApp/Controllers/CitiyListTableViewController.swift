@@ -10,23 +10,31 @@ import UIKit
 
 class CitiyListTableViewController: UITableViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     var cityViewModel = CityViewModel()
     var weatherViewModel = WeatherViewModel()
+    var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    func openDetail(selectedCity: String) {
-        guard let details = weatherViewModel.retireveCityWeather(selectedCity: selectedCity) else {return}
-        let detailWeatherViewModel = WeatherDetailViewModel(weatherData: details)
+    func openDetail(selectedCity: String, city: City) {
+        guard let details = weatherViewModel.retireveCityWeather(selectedCity: selectedCity) else { return }
+        let detailWeatherViewModel = WeatherDetailViewModel(weatherData: details, city: city)
         let detailViewController = DetailViewController(weatherDetailViewModel: detailWeatherViewModel)
+        detailViewController.delegate = self
         self.navigationController?.pushViewController(detailViewController, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cityViewModel.numberOfRows()
+        if isSearching {
+            return cityViewModel.searchNames.count
+        } else {
+            return cityViewModel.numberOfRows()
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -35,20 +43,46 @@ class CitiyListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CitiyCell
-        let citiy = cityViewModel.cities[indexPath.row]
-        cell.citiy = citiy
-        cell.accessoryType = citiy.isFavourite ? .checkmark : .none
+        if isSearching {
+            let city = cityViewModel.searchNames[indexPath.row]
+            cell.citiy = city
+            cell.accessoryType = cityViewModel.isFavourite(city: city) ? .checkmark : .none
+        } else {
+            let city = cityViewModel.sortedCities[indexPath.row]
+            cell.citiy = city
+            cell.accessoryType = cityViewModel.isFavourite(city: city) ? .checkmark : .none
+            //cell.backgroundColor = cityViewModel.isFavourite(city: city) ? .blue : .clear
+        }
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var City = cityViewModel.cities[indexPath.row]
-        tableView.deselectRow(at: indexPath, animated: true)
-        tableView.reloadRows(at: [indexPath], with: .automatic)
-        let selectedCity = City.name
-        self.weatherViewModel.fetchWeatherData(for: City)
-        self.weatherViewModel.togleFavourite()
-        self.openDetail(selectedCity: selectedCity)
+        let city = cityViewModel.sortedCities[indexPath.row]
+        let selectedCity = city.name
+        self.weatherViewModel.fetchWeatherData(for: city)
+        self.openDetail(selectedCity: selectedCity, city: city)
         
+    }
+}
+
+extension CitiyListTableViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        cityViewModel.retrieveSearchNames(searchText: searchText)
+        isSearching = true
+        tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        isSearching = false
+        searchBar.text = ""
+    }
+}
+
+extension CitiyListTableViewController: DetailViewControllerDelegate {
+    func didToggleFavourite(city: City) {
+        cityViewModel.toggleFavourite(city: city)
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }

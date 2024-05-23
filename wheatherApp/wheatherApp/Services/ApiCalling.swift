@@ -23,8 +23,10 @@ class ApiCalling {
             completionHandler(.failure(.invalidURL))
             return
         }
+        
         URLSession.shared.dataTask(with: urlString) { data, response, error in
             if let error = error {
+                print(error)
                 completionHandler(.failure(.networkError))
                 return
             }

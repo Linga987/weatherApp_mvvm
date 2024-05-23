@@ -123,7 +123,6 @@
 				B1E7EEC62BED2F4900C11584 /* Model */,
 				B1E7EE962BED2E0F00C11584 /* AppDelegate.swift */,
 				B1E7EE982BED2E0F00C11584 /* SceneDelegate.swift */,
-				B1E7EE9C2BED2E1000C11584 /* Main.storyboard */,
 				B1E7EE9F2BED2E1100C11584 /* Assets.xcassets */,
 				B1E7EEA12BED2E1100C11584 /* LaunchScreen.storyboard */,
 				B1E7EEA42BED2E1100C11584 /* Info.plist */,
@@ -195,6 +194,7 @@
 			children = (
 				B1F2123B2BF67E5C00598B8B /* DetailViewController.swift */,
 				B1F2123C2BF67E5C00598B8B /* DetailViewController.xib */,
+				B1E7EE9C2BED2E1000C11584 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -9,13 +9,14 @@ import Foundation
 import UIKit
 
 class CitiyCell: UITableViewCell {
+   
+    @IBOutlet weak var citiyNameLabel: UILabel!
+    
     var citiy: City? {
         didSet {
             updateUI()
         }
     }
-    
-    @IBOutlet weak var citiyNameLabel: UILabel!
     
     override class func awakeFromNib() {
         super.awakeFromNib()
