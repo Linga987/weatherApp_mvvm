@@ -19,6 +19,7 @@ class CitiyListTableViewController: UITableViewController {
         super.viewDidLoad()
         searchBar.delegate = self
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        observeEvent()
     }
     
     func openDetail(selectedCity: String, city: City) {
@@ -75,6 +76,25 @@ extension CitiyListTableViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         isSearching = false
         searchBar.text = ""
+    }
+    
+    func observeEvent() {
+        weatherViewModel.eventHandler = { event in
+            switch event {
+            case .loading:
+                print("weather data loading...")
+                /// here we can show activity indicater view
+            case.stopLoading:
+                print("Stop Loading..")
+                /// here we can stop activity indicater view
+            case.dataLoaded:
+                print("weather data loaded")
+                /// here we can reload the table view
+            case.error(let error):
+                print("error")
+            }
+            
+        }
     }
 }
 
