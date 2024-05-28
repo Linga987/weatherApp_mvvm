@@ -24,6 +24,7 @@
 		B1F2123D2BF67E5C00598B8B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1F2123C2BF67E5C00598B8B /* DetailViewController.xib */; };
 		B1F2123E2BF67E5C00598B8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2123B2BF67E5C00598B8B /* DetailViewController.swift */; };
 		B1F212402BF688BB00598B8B /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2123F2BF688BB00598B8B /* CityViewModel.swift */; };
+		BE64260C2C06447D00BFAEFC /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64260B2C06447D00BFAEFC /* EndPointType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B1F2123B2BF67E5C00598B8B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B1F2123C2BF67E5C00598B8B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		B1F2123F2BF688BB00598B8B /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		BE64260B2C06447D00BFAEFC /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				B1F2123A2BF67E3B00598B8B /* View */,
 				B1E7EED22BED4A7000C11584 /* Custom Cells */,
 				B1E7EECF2BED42B300C11584 /* Controllers */,
+				BE64260A2C0643F300BFAEFC /* Utils */,
 				B1E7EECC2BED3A2100C11584 /* ViewModels */,
 				B1E7EEC92BED2FFE00C11584 /* Services */,
 				B1E7EEC62BED2F4900C11584 /* Model */,
@@ -197,6 +200,14 @@
 				B1E7EE9C2BED2E1000C11584 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BE64260A2C0643F300BFAEFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE64260B2C06447D00BFAEFC /* EndPointType.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +347,7 @@
 				B1E7EEC82BED2F6700C11584 /* WeatherResponse.swift in Sources */,
 				B1E7EECE2BED3A4200C11584 /* WeatherViewModel.swift in Sources */,
 				B1E7EE972BED2E0F00C11584 /* AppDelegate.swift in Sources */,
+				BE64260C2C06447D00BFAEFC /* EndPointType.swift in Sources */,
 				B1E7EED42BED4A9C00C11584 /* CitiyCell.swift in Sources */,
 				B1E7EECB2BED301100C11584 /* ApiCalling.swift in Sources */,
 				B1F2123E2BF67E5C00598B8B /* DetailViewController.swift in Sources */,

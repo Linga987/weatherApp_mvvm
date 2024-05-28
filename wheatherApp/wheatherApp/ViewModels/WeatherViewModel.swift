@@ -12,12 +12,10 @@ class WeatherViewModel {
     
     var weatherData: WeatherResponse?
     var weatherArray = [WeatherResponse]()
-    var apiCalling = ApiCalling()
     var errorMessage: String?
     
-    
     func fetchWeatherData(for city: City) {
-        apiCalling.fetchWeather(for: city.name) { [weak self] result in
+        ApiCalling.shared.request(modelType: WeatherResponse.self, type: EndPointsItem.weather(city: city.name )) { [weak self] result in
             switch result {
             case .success(let data):
                 self?.weatherData = data
@@ -27,10 +25,22 @@ class WeatherViewModel {
             }
         }
     }
+   /* func fetchWeatherData(for city: City) {
+        apiCalling.fetchWeather(for: city.name) { [weak self] result in
+            switch result {
+            case .success(let data):
+                self?.weatherData = data
+                self?.weatherArray.append(data)
+            case .failure(let error):
+                self?.errorMessage = error.localizedDescription
+            }
+        }
+    } */
     
     func retireveCityWeather(selectedCity: String) -> WeatherResponse?  {
         let weatherResponse = weatherArray.first(where: {$0.name == selectedCity})
         return weatherResponse
     }
 }
+
 
